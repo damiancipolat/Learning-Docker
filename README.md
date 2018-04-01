@@ -47,65 +47,66 @@ curl -sSL https://get.docker.com/ | bash
   docker --images
 ```
 - Ver containers activos:
-
+```sh
   docker ps
-
+```
 - Ver containers y detalles:
-
-	docker ps -a
-
+```sh
+  docker ps -a
+```
 - Ejecutar un container:
-
+```sh
   docker run <img> <cmd>
-
+```
 - Ejecutar definiendo el nombre a un container:
-
+```sh
   docker run -d -P --name web <img> <cmd>
-
+```
 - Ejecutar un container pero sin que termine y acceso por terminal:
-
+```sh
   docker run -t -i <img> <cmd>
-
+```
 - Ejecuntar un container pero como daemon:
-
-	docker run -d <img> <cmd>
-
+```sh
+  docker run -d <img> <cmd>
+```
 - Ejecutar un container bindeando puertos (bindea puertos de forma random):
-
+```sh
   docker run -d -P <img> <cmd>
-
+```
 - Ejecutar un container definiendo que puertos bindear (portHost:portContainer):
-
+```sh
   docker run -d -p 5000:5000 <img> <cmd>
-
+```
 - Ejecutar un container bindeando ip/puerto/protocolo del host:
-
-	docker run -d -p 127.0.0.1:5000:5000/tcp 27.0.0.1:514:514/udp	<img> <cmd>
-
+```sh
+  docker run -d -p 127.0.0.1:5000:5000/tcp 27.0.0.1:514:514/udp	<img> <cmd>
+```
 - Detener un container:
-
+```sh
   docker stop <id>
-
+```
 - Reinicar un container:
-
-	docker restart <id container>
-
+```sh
+  docker restart <id container>
+```
 - Ver log de ejecución de un container:
-
-	docker logs <container_name>/id
-
+```sh
+  docker logs <container_name>/id
+```
 - Ver que puerto esta bindeado un container:
-
+```sh
   docker port <id container>
-
+```
 - Eliminar un container:
-
-	docker rm <id container>/<container name>
-
+```sh
+  docker rm <id container>/<container name>
+```
 - Ver que procesos se ejecuta dentro de un container:
-
-	docker top <id container>
-
+```sh
+  docker top <id container>
+```
 - Inspeccionar contenido de un container:
-
-	docker inspect <id container>
+```sh
+  docker inspect <id container>
+```
