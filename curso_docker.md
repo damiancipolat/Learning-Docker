@@ -1,6 +1,6 @@
-# `Apuntes curso de Docker CLA ARGENTINA`
+# Apuntes curso de Docker CLA ARGENTINA
 
-<img align="center" width="100" height="100" src="http://www.fillmurray.com/100/100">
+<img align="center" width="100" height="100" src="https://lh3.googleusercontent.com/-iTQfxjlIkM4/AAAAAAAAAAI/AAAAAAAAADE/gpd8wKRP0rc/s640/photo.jpg">
 
 
 ## Clase 1:
