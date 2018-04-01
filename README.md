@@ -13,6 +13,7 @@ hkp://pgp.mit.edu:80 \
 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
 
 nano /etc/apt/sources.list.d/docker.list
+
 agregar: deb https://apt.dockerproject.org/repo debian-jessie main
 
 apt-get install apt-transports-https
