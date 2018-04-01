@@ -42,10 +42,10 @@ Comandos de docker:
 - Imagenes descargadas:
   docker --images
 
-- Ver containers activos
+- Ver containers activos:
   docker ps
 
-- Ver containers y detalles
+- Ver containers y detalles:
 	docker ps -a
 
 - Ejecutar un container:
@@ -57,22 +57,22 @@ Comandos de docker:
 - Ejecutar un container pero sin que termine y acceso por terminal:
   docker run -t -i <img> <cmd>
 
-- Ejecuntar un container pero como daemon.
+- Ejecuntar un container pero como daemon:
 	docker run -d <img> <cmd>
 
-- Ejecutar un container bindeando puertos: (bindea puertos de forma random)
+- Ejecutar un container bindeando puertos (bindea puertos de forma random):
   docker run -d -P <img> <cmd>
 
-- Ejecutar un container definiendo que puertos bindear: (portHost:portContainer)
+- Ejecutar un container definiendo que puertos bindear (portHost:portContainer):
   docker run -d -p 5000:5000 <img> <cmd>
 
-- Ejecutar un container bindeando ip/puerto/protocolo del host.
+- Ejecutar un container bindeando ip/puerto/protocolo del host:
 	docker run -d -p 127.0.0.1:5000:5000/tcp 27.0.0.1:514:514/udp	<img> <cmd>
 
-- Detener un container.
+- Detener un container:
   docker stop <id>
 
-- Reinicar un container.
+- Reinicar un container:
 	docker restart <id container>
 
 - Ver log de ejecución de un container:
@@ -81,11 +81,12 @@ Comandos de docker:
 - Ver que puerto esta bindeado un container:
   docker port <id container>
 
-- Eliminar un container.
+- Eliminar un container:
 	docker rm <id container>/<container name>
 
 - Ver que procesos se ejecuta dentro de un container:
 	docker top <id container>
 
 - Inspeccionar contenido de un container:
+
 	docker inspect <id container>
