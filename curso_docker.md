@@ -1,6 +1,7 @@
 # Apuntes curso de Docker CLA ARGENTINA
 
-<img align="left" width="150" height="150" src="https://lh3.googleusercontent.com/-iTQfxjlIkM4/AAAAAAAAAAI/AAAAAAAAADE/gpd8wKRP0rc/s640/photo.jpg">
+<img width="150" height="150" src="https://lh3.googleusercontent.com/-iTQfxjlIkM4/AAAAAAAAAAI/AAAAAAAAADE/gpd8wKRP0rc/s640/photo.jpg">
+
 
 ## Clase 1:
 asdasdasdasdasd asd asfasfsaf
