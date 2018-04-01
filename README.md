@@ -33,19 +33,19 @@ curl -sSL https://get.docker.com/ | bash
 ### Lista de comandos:
 
 - agregar usuario para docker:
-
+```sh
   groupadd docker
   usermod -aG docker damianlimux
   id damianlinux
-
+```
 - Version de docker:
-
+```sh
   docker --version
-
+```
 - Imagenes descargadas:
-
+```sh
   docker --images
-
+```
 - Ver containers activos:
 
   docker ps
