@@ -32,7 +32,7 @@ curl -sSL https://get.docker.com/ | bash
 
 ### Lista de comandos:
 
-- agregar usuario para docker:
+- Agregar usuario para docker:
 ```sh
   groupadd docker
   usermod -aG docker damianlimux
