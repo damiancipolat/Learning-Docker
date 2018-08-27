@@ -75,5 +75,16 @@ ENTRYPOINT ["npm","start"]
 
 #Buil the image, set the name 'damcipolat/node'
 docker build -f dockerfile -t damcipolat/node .
+```
+- Login into docker hub, is necessary to can publish images in docker hub.
 
+```sh
+docker login
+username: damcipolat
+password: sxxxxx
+```
+- ¿How to publish images in docker hub?
+
+```sh
+docker push damcipolat/node
 ```
