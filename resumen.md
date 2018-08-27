@@ -73,4 +73,7 @@ EXPOSE 3000
 
 ENTRYPOINT ["npm","start"]
 
+#Buil the image, set the name 'damcipolat/node'
+docker build -f dockerfile -t damcipolat/node .
+
 ```
