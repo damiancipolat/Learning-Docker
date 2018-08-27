@@ -2,7 +2,7 @@
 
 ![N|Solid](https://www.openshift.org/img/logo-docker-h.svg)
 
-Usefull command list:
+- Usefull command list:
 
 ```sh
 
