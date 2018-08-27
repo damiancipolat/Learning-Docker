@@ -27,6 +27,9 @@ docker rm <container_name/container_id>
 #Restart container.
 docker container restart <container_name/container_id>
 
+#Stop container
+docker stop <container_id>
+
 #Run container define custom name.
 docker run --name web
 
