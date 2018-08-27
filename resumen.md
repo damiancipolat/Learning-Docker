@@ -38,14 +38,39 @@ docker run -d alpine
 
 #Run container port mapping.
 docker run -p 8080:3000 alpine
+```
+- ¿How to include custom source code in container?, use a volume
 
-#¿How to include custom source code in container? -> use a volume
-
+```sh
 #Run container and define volume mapping.
 docker run -p 8080:3000 /var/www:/var/test node
 
 #Run container and define volumen and start commnad and working directory
 docker run -p 8080:9000 /var/test:/var/test -w "/var/test" --name api node npm start
+```
+- ¿How to create a custom image?
 
+```sh
+#Create a docker file
+touch dockerfile
+
+#Add this content to the dockerfile
+FROM node:latest
+
+MAINTAINER damian.cipolat@gmail.com
+
+ENV NODE_ENV=production
+ENV PORT=3000
+
+COPY    . /var/www
+WORKDIR /var/www
+
+VOLUME ["/var/www"]
+
+RUN    npm install
+
+EXPOSE 3000
+
+ENTRYPOINT ["npm","start"]
 
 ```
