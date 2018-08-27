@@ -83,7 +83,7 @@ docker login
 username: damcipolat
 password: sxxxxx
 ```
-- ¿How to publish images in docker hub?
+- ¿How to publish images in docker hub?, is necesesary stay logged.
 
 ```sh
 docker push damcipolat/node
