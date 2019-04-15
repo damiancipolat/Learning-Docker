@@ -1,0 +1,6 @@
+api:  
+     build: .  
+     volumes:    
+         - "./api:/src/"  
+     ports:    
+         - "8000:8000"
