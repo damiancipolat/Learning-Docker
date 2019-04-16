@@ -65,3 +65,7 @@ curl -fsSL https://raw.githubusercontent.com/mviereck/x11docker/master/x11docker
 Hay varios problemas con ejecutar los ejemplos de la pagina, no pude hacer andar hasta el momento una conexion con algn desktop.
 
 ### 3) Docker Image with GUI
+
+Basado en este video: https://www.youtube.com/watch?v=PXs2aGKt8gU
+
+
