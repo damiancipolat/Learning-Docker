@@ -55,7 +55,7 @@ docker run -ti --rm \
 
 Ejemplos obtenidos de la web del proyecto x11 server: https://github.com/mviereck/x11docker#terminal-usage
 
-**Instalation:**
+**Instalación:**
 
 Ejecute este comando para instalar X11DOCKER.
 
