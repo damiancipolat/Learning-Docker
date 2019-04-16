@@ -40,7 +40,6 @@ CMD /usr/bin/firefox
 Ejecutar contenedor:
 
 ```sh
-
 #Build the image
 docker build -t firefox .
 
@@ -55,3 +54,12 @@ docker run -ti --rm \
 ### 2) Docker X11 desktop.
 
 Ejemplos obtenidos de la web del proyecto x11 server: https://github.com/mviereck/x11docker#terminal-usage
+
+**Instalation:**
+
+Ejecute este comando para instalar X11DOCKER.
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/mviereck/x11docker/master/x11docker | sudo bash -s -- --update
+```
+
