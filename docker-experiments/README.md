@@ -62,4 +62,6 @@ Ejecute este comando para instalar X11DOCKER.
 ```sh
 curl -fsSL https://raw.githubusercontent.com/mviereck/x11docker/master/x11docker | sudo bash -s -- --update
 ```
+Hay varios problemas con ejecutar los ejemplos de la pagina, no pude hacer andar hasta el momento una conexion con algn desktop.
 
+### 3) Docker Image with GUI
