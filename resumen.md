@@ -18,17 +18,26 @@ docker pull alpine
 #Remove an image.
 docker rmi alpine
 
+#Remove all images.
+docker rmi $(docker images -q)
+
 #Create a container.
 docker run alpine
 
 #Delete container.
 docker rm <container_name/container_id>
 
+#Remove all containers
+docker rm $(docker ps -aq)
+
 #Restart container.
 docker container restart <container_name/container_id>
 
 #Stop container
 docker stop <container_id>
+
+#Stop all containers
+docker stop $(docker ps -aq)
 
 #Run container define custom name.
 docker run --name web
