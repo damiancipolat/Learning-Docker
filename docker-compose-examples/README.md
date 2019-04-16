@@ -4,13 +4,29 @@
 
 Comandos para probar los ejemplos de docker-compose
 
-### Ejecución - ejemplo N° 1:
+### Ejecución - ejemplo N° 1: Nodejs Api-rest
 
 Ejemplo basico de docker-compose con un simple api escrita en Node.js
 ```sh
 
 #Change to correct dir.
 cd example-1
+
+#Build the image
+docker-compose build
+
+#Start the container
+docker-compose up
+
+```
+
+### Ejecución - ejemplo N° 2: Nodejs Api-rest + MongoDB
+
+Ejemplo basico de docker-compose con un simple api escrita en Node.js y conexion a otro container con mongodb.
+```sh
+
+#Change to correct dir.
+cd example-2
 
 #Build the image
 docker-compose build
