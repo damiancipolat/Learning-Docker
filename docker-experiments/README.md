@@ -7,6 +7,7 @@ Sección con pruebas y experimentos usando docker.
 ### Docker Gui APP.
 
 Ejemplo de como ejecutar una aplicación grafica desde un contenedor usando x11 forwarding.
+Obtenido de esta web: http://fabiorehm.com/blog/2014/09/11/running-gui-apps-with-docker/
 
 ```sh
 
