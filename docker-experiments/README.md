@@ -4,18 +4,22 @@
 
 Sección con pruebas y experimentos usando docker.
 
-### Docker gui-app.
+### Docker Gui APP.
 
 Ejemplo de como ejecutar una aplicación grafica desde un contenedor usando x11 forwarding.
+
 ```sh
 
 #Change to correct dir.
-cd example-1
+cd gui-apps
 
 #Build the image
-docker-compose build
+docker build -t firefox .
 
 #Start the container
-docker-compose up
+docker run -ti --rm \
+       -e DISPLAY=$DISPLAY \
+       -v /tmp/.X11-unix:/tmp/.X11-unix \
+       firefox
 
 ```
