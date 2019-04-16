@@ -2,9 +2,10 @@
 const http        = require('http');
 const express     = require('express');
 const MongoClient = require('mongodb').MongoClient;
+const dotEnv      = require('dotenv').config();
 
 //DB path.
-const host = "mongodb://localhost:27017/";
+const host = process.env.DB_HOST;
 
 //Connect to db.
 const conectDb = (url)=>{
@@ -35,7 +36,7 @@ const getAll = (db,colName)=>{
       if (err)
         reject(err);
       else
-        resove(result);
+        resolve(result);
       
     });
 
