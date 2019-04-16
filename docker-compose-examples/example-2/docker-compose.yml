@@ -1,0 +1,25 @@
+version: "2"
+services:
+  app:
+    container_name: app
+    restart: always
+    build: .
+    ports:
+      - "8000:8000"
+    links:
+      - mongo
+    networks:
+      - network
+  mongo:
+    container_name: mongo
+    image: mongo
+    volumes:
+      - ./data:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - network
+
+networks:
+  network:
+    driver: bridge
