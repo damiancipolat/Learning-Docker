@@ -68,4 +68,14 @@ Hay varios problemas con ejecutar los ejemplos de la pagina, no pude hacer andar
 
 Basado en este video: https://www.youtube.com/watch?v=PXs2aGKt8gU
 
+**Instalación pasos:**
+
+Ejecute lo siguientes passos.
+
+```sh
+docker search hackinglab | grep tiger
+docker pull hackinglab/ubuntu-openbox-tigervnc-novnc-firefox-and-zapproxy
+docker run --rm -i -p 8080:80 hackinglab/ubuntu-openbox-tigervnc-novnc-firefox-and-zapproxy
+```
+
 
