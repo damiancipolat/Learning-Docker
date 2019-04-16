@@ -51,3 +51,7 @@ docker run -ti --rm \
        firefox
 
 ```
+
+### 2) Docker X11 desktop.
+
+Ejemplos obtenidos de la web del proyecto x11 server: https://github.com/mviereck/x11docker#terminal-usage
