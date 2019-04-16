@@ -77,6 +77,8 @@ docker search hackinglab | grep tiger
 docker pull hackinglab/ubuntu-openbox-tigervnc-novnc-firefox-and-zapproxy
 docker run --rm -i -p 8080:80 hackinglab/ubuntu-openbox-tigervnc-novnc-firefox-and-zapproxy
 ```
-Luego abrir un browser y ejecutar: http://127.0.0.1:8080 y podras acceder a un cliente vnc en browser para acceder al container atravez de un sistema VNC.
 
+Otra web con ejemplos de este mismpo tipo podria ser: https://github.com/fcwu/docker-ubuntu-vnc-desktop
+
+Luego abrir un browser y ejecutar: http://127.0.0.1:8080 y podras acceder a un cliente vnc en browser para acceder al container atravez de un sistema VNC.
 
