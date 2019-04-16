@@ -4,7 +4,7 @@
 
 Sección con pruebas y experimentos usando docker.
 
-### 1) Docker GUI - APP.
+### 1) Docker GUI - APP
 
 Ejemplo de como ejecutar una aplicación grafica desde un contenedor usando x11 forwarding.
 
