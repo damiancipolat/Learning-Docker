@@ -11,9 +11,8 @@ Ejemplo de como ejecutar una aplicación grafica desde un contenedor usando x11 
 Obtenido de esta web: http://fabiorehm.com/blog/2014/09/11/running-gui-apps-with-docker/
 
 
-Crear Dockerfile
+**Crear Dockerfile**
 ```sh
-
 #Change to correct dir.
 cd gui-apps
 
