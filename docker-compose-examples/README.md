@@ -51,3 +51,26 @@ docker-compose build
 docker-compose up
 
 ```
+
+### Ejecución - ejemplo N° 4: Echo loop + rtail client in container + rtail in host machine
+
+En este ejemplo ejecutamos un contenedor con un script que hace stdout de un texto y un pipe a rtail para que envie
+el log al rtail server contenido en la maquina host.
+
+```sh
+
+#Change to correct dir.
+cd example-4
+
+#In host machine.
+sudo npm install -g rtail
+rtail-server --web-port 8080 --udp-port 9090
+
+#Create image
+docker-compose build
+
+#Start the container
+docker-compose up
+
+```
+Luego abrir un browser e ir a: http://127.0.0.1:8081/ y veras el stdout como llega al rtail server en la host machine.
