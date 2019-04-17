@@ -91,7 +91,7 @@ Trabajaremos con esta imagèn https://hub.docker.com/r/dorowu/ubuntu-desktop-lxd
 docker pull dorowu/ubuntu-desktop-lxde-vnc
 
 #Seteamos acceso desde el puerto 6001.
-docker run -p 6001:80 -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc -d --name UBUNTU-DESKTOP-1
+docker run -d -p 6001:80 -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc --name UBUNTU-DESKTOP-1
 
 #Luego ejecutamos
 docker ps -la
