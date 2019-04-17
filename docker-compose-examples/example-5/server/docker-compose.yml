@@ -1,0 +1,16 @@
+version: "2"
+services:
+  app:
+    container_name: rtail-server
+    restart: always
+    build: .
+    ports:
+      - "8888:8888"
+      - "9999:9999/udp"
+    networks:
+      - network
+
+networks:
+  network:
+    driver: bridge
+
