@@ -1,0 +1,12 @@
+version: "2"
+services:
+  app:
+    container_name: while-app-rtail
+    restart: always
+    build: .
+    environment:
+      - RTAIL_IP=${RTAIL_IP}
+      - RTAIL_PORT=${RTAIL_PORT}      
+    ports:
+      - "8000:8000"
+    network_mode: host

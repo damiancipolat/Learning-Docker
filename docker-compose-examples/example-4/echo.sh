@@ -1,0 +1,1 @@
+while true; do echo [1, 2, 3, 4,  "Qapla", ${RTAIL_IP}, ${RTAIL_PORT}]; sleep 1; done | rtail --host ${RTAIL_IP} --port ${RTAIL_PORT} --id while-test-docker	
