@@ -82,3 +82,18 @@ Otra web con ejemplos de este mismpo tipo podria ser: https://github.com/fcwu/do
 
 Luego abrir un browser y ejecutar: http://127.0.0.1:8080 y podras acceder a un cliente vnc en browser para acceder al container atravez de un sistema VNC.
 
+**Ejecutar UBUNTU-DESKTOP:**
+
+Trabajaremos con esta imagèn https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc
+
+```sh
+#Descargamos la imagen.
+docker pull dorowu/ubuntu-desktop-lxde-vnc
+
+#Seteamos acceso desde el puerto 6001.
+docker run -p 6001:80 -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc -d --name UBUNTU-DESKTOP-1
+
+#Luego ejecutamos
+docker ps -la
+```
+Entrar en http://127.0.0.1:6001 para acceder al cliente VNC web.
