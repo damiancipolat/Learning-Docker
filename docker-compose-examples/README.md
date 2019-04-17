@@ -74,3 +74,26 @@ docker-compose up
 
 ```
 Luego abrir un browser e ir a: http://127.0.0.1:8081/ y veras el stdout como llega al rtail server en la host machine.
+```
+
+### Ejecución - ejemplo N° 5: rtail-server + echo loop rtail client + todo en contenedores.
+
+En este ejemplo se arma un contenedor con un servidor de rtail y luego varios contenedores que ejecutan el mismo proceso, que hace echo de un string al servidor de logs.
+
+```sh
+
+#Change to correct dir.
+cd example-5
+
+#Server
+cd server
+docker-compose build
+docker-compose up
+
+#Clients
+cd ..
+cd clients
+docker-compose build
+docker-compose up -d --scale app=5
+```
+Luego abrir un browser e ir a: http://127.0.0.1:8081/ y veras el stdout como llega al rtail server en la host machine.
