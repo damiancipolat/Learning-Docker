@@ -36,7 +36,7 @@ docker-compose up
 
 ```
 
-### Ejecución - ejemplo N° 3: Nodejs Webserver + app + MongoDB
+### Ejecución - ejemplo N° 3: Nodejs Webserver + app + MongoDB -> MERN
 
 Ejemplo basico de docker-compose con un simple api escrita en Node.js y conexion a otro container con mongodb con un webserver usando expressjs, luego entra a http://127.0.0.1:3000
 ```sh
