@@ -1,6 +1,7 @@
-api:  
-     build: .  
-     volumes:    
-         - "./api:/src/"  
-     ports:    
-         - "8000-9000:8000"
+version: "2"
+services:
+  api:
+    restart: always
+    build: .
+    ports:
+      - "8000-9000:8000"
