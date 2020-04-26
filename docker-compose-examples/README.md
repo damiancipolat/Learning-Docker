@@ -7,7 +7,7 @@ Comandos para probar los ejemplos de docker-compose
 ### Ejecución - ejemplo N° 1: Nodejs Api-rest
 
 Ejemplo basico de docker-compose con un simple api escrita en Node.js
-Revisar por favor el docker.compose.yml para ver bindeo de puertos dentro de un rango.
+Revisar por favor el **docker.compose.yml** para ver bindeo de puertos dentro de un rango.
 ```sh
 
 #Change to correct dir.
